@@ -1,0 +1,9 @@
+CREATE TABLE `news` (
+    `id` int(11) AUTO_INCREMENT PRIMARY KEY NOT NULL,
+    `name` VARCHAR(254) NOT NULL,
+    `description` VARCHAR(254) NOT NULL,
+    `is_active` INT,
+    `author_id` int(11) NOT NULL,
+    `created_at` TIMESTAMP DEFAULT CURRENT_TIMESTAMP ,
+    `updated_at` DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
